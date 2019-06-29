@@ -26,6 +26,7 @@ class PostController extends Controller {
         $posts = Post::orderby('id', 'desc')->paginate(5); //show only 5 items at a time in descending order
 
         return view('posts.index', compact('posts'));
+
     }
 
     /**
